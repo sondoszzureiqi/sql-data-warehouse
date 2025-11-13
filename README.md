@@ -7,7 +7,7 @@ A comprehensive **Data Warehousing and Analytics** solution built on **SQL Serve
   - Bronze: Raw data ingestion  
   - Silver: Cleaned and transformed data  
   - Gold: Analytics-ready data for reporting
-  - 
+    
 - **ETL Pipelines**  
   - Extract, Transform, Load processes using SQL Server  
 
