@@ -34,17 +34,17 @@ CREATE TABLE bronze.crm_prd_info(
 	prd_nm	   NVARCHAR(50),
 	prd_cost   INT,
 	prd_line   NVARCHAR(50),
-	prd_start  DATETIME,
-	prd_end_dt DATETIME
+	prd_start_dt  DATE,
+	prd_end_dt DATE
 
 );
 GO
 
-IF OBJECT_ID('bronze.crm_sales_deatils','U') IS NOT NULL
-	DROP TABLE bronze.crm_sales_deatils;
+IF OBJECT_ID('bronze.crm_sales_details','U') IS NOT NULL
+	DROP TABLE bronze.crm_sales_details;
 GO
 
-CREATE TABLE bronze.crm_sales_deatils(
+CREATE TABLE bronze.crm_sales_details(
 	sls_ord_num  NVARCHAR(50),
 	sls_prd_key  NVARCHAR(50),
 	sls_cust_id  INT,
